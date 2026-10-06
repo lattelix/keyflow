@@ -1,0 +1,41 @@
+name: Documentation contracts
+
+on:
+  push:
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'tools/**'
+      - '.github/workflows/docs.yml'
+  pull_request:
+    paths:
+      - '**.md'
+      - 'docs/**'
+      - 'tools/**'
+      - '.github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout exact revision
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Python runtime
+        run: python3 --version
+      - name: Validate real repository contracts
+        run: python3 tools/plan.py validate
+      - name: Test validator safeguards
+        run: python3 -m unittest discover -s tools -p 'test_*.py' -v
+      - name: Show next eligible task
+        run: python3 tools/plan.py next

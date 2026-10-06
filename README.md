@@ -1,21 +1,42 @@
 # Keyflow
 
-Open-source, song-first piano learning.
+**Learn the music you actually want to play.**
 
-Keyflow turns a piece a learner wants to play into a guided path: prerequisites → notes/chords → hand-specific practice → transitions → phrases → sections → full performance.
+Keyflow is a song-first piano-learning project: a learner chooses a piece, learns the missing basics in context, practices manageable phrases, and gradually removes assistance. Web/PWA first; iOS/Android later using the same product contracts and domain logic.
 
-## Status
-Pre-development / product and design foundation.
+## Start here
 
-## Targets
-Web/PWA, iOS, Android, tablet and desktop-friendly web.
+- [Agent entry point](AGENTS.md)
+- [Context and document map](docs/START_HERE.md)
+- [Verified project state](docs/STATE.md)
+- [Execution plan](docs/plan.md) · [Roadmap](docs/roadmap.md)
+- [Product specification](docs/product.md) · [Designer brief](docs/design.md)
+- [Architecture](docs/architecture.md) · [Decisions](docs/decisions.md)
+- [Task queue](docs/tasks/queue.json) · [Execution guide](docs/operations/agent-playbook.md)
 
-## Principles
-- Song-first, theory in context
-- Local-first and useful without an account
-- One responsive product, not separate mobile/desktop products
-- Progressive disclosure: guidance fades as skill grows
-- MIDI-first objective practice feedback
-- Open formats: MusicXML + MIDI
+Repository: https://github.com/lattelix/keyflow
 
-See `docs/product.md`, `docs/design.md`, `docs/architecture.md`, and `docs/roadmap.md`.
+Figma: https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn
+
+## Actual status
+
+This repository contains the execution specification and its validation tooling. **It is not a working piano app.** Designs, application code, application CI, deployment, native builds and instrument verification must not be reported as completed because they appear in the plan.
+
+The first useful release must contain one complete guided learning journey, not just a score player. Automatic grading is unavailable without a supported input source; self-assessment is explicitly labelled.
+
+## Commands available now
+
+```sh
+python3 tools/plan.py validate
+python3 tools/plan.py next
+python3 tools/plan.py show KF-001
+python3 -m unittest discover -s tools -p 'test_*.py'
+```
+
+These validate/select planning tasks, not the application. Application commands are defined as future contracts in [commands.md](docs/operations/commands.md).
+
+## Scope and costs
+
+No required account, backend, paid AI API, subscription or proprietary music-player dependency for the web MVP. Hosting/build quotas and app-store distribution have separate conditions; see [services.md](docs/engineering/services.md). Music rights are separate from code rights. `Another Love` is a personal UX reference, not bundled demo content.
+
+License selection is recorded as an owner decision before release; public visibility alone is not an open-source license. See [content policy](docs/content/policy.md).

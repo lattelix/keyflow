@@ -1,0 +1,29 @@
+{
+ "schema_version":1,
+ "requirements":[
+  {"id":"R01","text":"Start and resume a useful lesson without login or purchase."},
+  {"id":"R02","text":"First alpha includes a complete authored beginner learning journey, not only playback."},
+  {"id":"R03","text":"Pitch, note name, notation, keyboard and audio representations remain consistent."},
+  {"id":"R04","text":"Playback, pause, seek, count-in, tempo and loop have deterministic safe behavior."},
+  {"id":"R05","text":"Hand selection depends on explicit mapping; hand, staff, voice and track are not interchangeable."},
+  {"id":"R06","text":"Hints and contextual theory can be reduced and restored without losing position."},
+  {"id":"R07","text":"Self-report, screen interaction and physical MIDI evidence are distinguished; no fabricated grading."},
+  {"id":"R08","text":"Local progress is durable, versioned, exportable and recoverable without silent data loss."},
+  {"id":"R09","text":"Prepared lessons run offline; resource completeness, eviction and update failures have honest states."},
+  {"id":"R10","text":"Only documented import subsets are playable; unsupported semantics are never silently dropped."},
+  {"id":"R11","text":"Bundled content and dependencies have recorded distributable rights; user imports stay private/local."},
+  {"id":"R12","text":"One responsive product and token/component contract across phone, tablet and desktop."},
+  {"id":"R13","text":"Accessible keyboard/touch/screen-reader operation, contrast, focus and reduced motion."},
+  {"id":"R14","text":"Russian and English copy plus explicit pitch naming conventions; no mixed locale or B/H ambiguity."},
+  {"id":"R15","text":"Runtime capability detection, user-triggered permissions and graceful unsupported-device fallback."},
+  {"id":"R16","text":"No mandatory paid infrastructure/API/telemetry; explicit gates before spending or cloud processing."},
+  {"id":"R17","text":"Audio timing, rendering cost, UI responsiveness and cleanup have measured acceptance checks."},
+  {"id":"R18","text":"Pinned compatible toolchain, real scripts, CI and reproducible builds when implementation starts."},
+  {"id":"R19","text":"Negative tests and recovery paths are first-class; all claimed checks have evidence."},
+  {"id":"R20","text":"Native implementations preserve product semantics and pass real platform lifecycle tests."},
+  {"id":"R21","text":"Learning progress uses bounded heuristics, not unvalidated claims of professional mastery."},
+  {"id":"R22","text":"Every release requirement maps to task outputs, visual/behavior contracts and acceptance evidence."},
+  {"id":"R23","text":"Educational and musical reference material is checked; no invented chord/fingering/original-score claims."},
+  {"id":"R24","text":"Agents respect resource isolation, dependencies, review, approvals and current verified state."}
+ ]
+}

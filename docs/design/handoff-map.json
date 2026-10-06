@@ -1,0 +1,8 @@
+{
+ "schema_version":1,
+ "figma_file":"STjpIkSSiMvFfe9lFog0Yn",
+ "status":"awaiting-design-work",
+ "verified_cover":{"page":"0:1","frame":"1:10"},
+ "product_nodes":[],
+ "rules":["Populate only from actual Figma reads after work.","Each mapping includes screen_or_component_id, node_id, approved_variant, revision, intended_code_path and evidence.","Null or missing product mappings mean not ready for design-to-code.","Do not count the cover as an implemented application screen."]
+}

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "gates": [
+    {"id":"G-IMPLEMENT","status":"pending","owner":"product-owner","condition":"Owner accepts design handoff and explicitly authorizes application scaffolding and infrastructure preparation.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-ENGINE","status":"pending","owner":"technical-reviewer","condition":"KF-018 and KF-019 spikes pass; adapters, supported subset, timing and offline risks are reviewed in KF-020.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-PRODUCTION","status":"pending","owner":"product-owner","condition":"Owner accepts a specific tested web release candidate and authorizes production promotion; license and hosting terms resolved.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-MIDI","status":"pending","owner":"product-owner","condition":"Owner authorizes instrument-feedback work; no microphone recording or paid service implied.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-NATIVE","status":"pending","owner":"product-owner","condition":"Owner authorizes native development; no store fees, signing purchase or store publication implied.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-STORES","status":"pending","owner":"product-owner","condition":"Owner authorizes named store distribution, account/signing details and any disclosed fee separately.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-SYNC","status":"pending","owner":"product-owner","condition":"Owner authorizes preparing optional sync specification; implementation/cloud provisioning needs its subsequent accepted ADR.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-ADVANCED","status":"pending","owner":"product-owner","condition":"Owner authorizes a bounded advanced-curriculum specification and review process.","approved_by":null,"approved_at":null,"evidence":[]},
+    {"id":"G-DESKTOP","status":"pending","owner":"product-owner","condition":"Owner requests investigation of a native desktop app beyond the existing browser/PWA target.","approved_by":null,"approved_at":null,"evidence":[]}
+  ]
+}

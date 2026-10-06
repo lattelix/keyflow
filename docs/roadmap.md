@@ -1,25 +1,29 @@
-# Roadmap
+# Roadmap 1.0 — от спецификации к реальному обучению
 
-## v0.1 — Foundation
-Product brief, architecture, legal content policy, responsive UX contract, Figma foundations/components, repository conventions.
+Порядок определяется зависимостями задач, а не календарными обещаниями. Версии — продуктовые вехи, не фиктивные теги релизов.
 
-## v0.2 — Complete product prototype
-Home, search/song overview, learning path, lesson, practice, score, keyboard, Learn, Library, Progress, Settings across phone/tablet/desktop. Clickable end-to-end beginner journey.
+| Веха | Задачи | Результат | Условие выхода |
+|---|---|---|---|
+| v0.1 · Baseline | KF-001–KF-002 | Проверенный inventory, границы MVP, журнал решений | Нет неразрешённых конфликтов scope/владельца |
+| v0.2 · Design | KF-003–KF-016 | Токены, компоненты, экраны, реальные состояния, responsive prototype и handoff | Дизайн принят владельцем; `G-IMPLEMENT` отдельно разрешает реализацию |
+| v0.3 · Technical foundation | KF-017–KF-020 | Зафиксированные версии, репродуцируемый scaffold, music/offline spikes, контракты | `G-ENGINE` с измерениями, а не обещаниями библиотек |
+| v0.4 · Teaching web alpha | KF-021–KF-035 | Один законченный учебный маршрут, импорт поддерживаемых файлов, практика, сохранение/возврат, offline | Acceptance matrix + тест с новичком; known limitations раскрыты |
+| v0.4.1 · Web pilot | KF-036–KF-037 | Связанный Git deployment, проверенный preview, затем pilot | `G-PRODUCTION`: owner принимает конкретный candidate |
+| v0.5 · MIDI feedback | KF-038–KF-042 | Проверка нот/тайминга с поддерживаемым цифровым инструментом | Реальное устройство и различение self-report/measured |
+| v0.6 · Native | KF-043–KF-047 | iOS/Android без отдельной продуктовой логики | `G-NATIVE`; реальный offline/audio/MIDI test; отдельное разрешение магазина |
+| v0.7+ · Optional expansion | KF-048–KF-050 | Сначала спецификация sync, advanced curriculum или native desktop | Отдельные ворота; никаких автоматических DB/подписок |
 
-## v0.3 — Playable local-first MVP
-Web/PWA first. MusicXML/MIDI import, notation, playback/transport, tempo, looping, LH/RH practice, virtual keyboard, local progress and resume.
+## Изменение относительно начального roadmap
+Ранее tutor находился после «playable MVP». Теперь минимальный tutor входит в первый полезный alpha: один редакторски заданный путь, короткие объяснения, разбор рук/переходов, фрагмент целиком, самооценка и следующая практика. Генерация такого пути для любого произведения остаётся будущей задачей. Это защищает главную цель: учиться, а не только смотреть/слушать ноты.
 
-## v0.4 — Tutor engine
-Prerequisite graph, contextual theory, chord/note/transition drills, phrase decomposition, spaced review and progressive hint removal.
+## v0.4: обязательно
+Локальный старт без аккаунта; оригинальный учебный материал; подсказки «клавиша ↔ звук ↔ название ↔ запись»; цикл Listen → Try → Reflect; темп/петля/руки; надёжное сохранение и экспорт резервной копии; PWA offline после явной подготовки; безопасный импорт заявленного подмножества; честные ограничения проверки; один адаптивный UI на телефоне/планшете/desktop.
 
-## v0.5 — Instrument feedback
-Web MIDI + native MIDI, correctness/timing metrics, weak-transition detection and adaptive drills.
+## v0.4: не делать
+Платный каталог популярных песен; скрейпер MuseScore/YouTube; AI API; автоматическую транскрипцию аудио/PDF; распознавание игры микрофоном; оценку посадки или пальцев по MIDI; обещание профессионального уровня; аккаунты/синхронизацию; покупки доменов; App Store/Google Play release; нативный desktop wrapper.
 
-## v0.6 — Native + sync
-Expo iOS/Android, optional account, cross-device progress sync and offline conflict strategy.
+## Параллельность
+Текст учебного материала может уточняться вместе с дизайном. Нельзя одновременно редактировать одну семью Figma-компонентов несколькими агентами. После утверждения интерфейсов domain и web UI могут выполняться раздельно на отдельных ветках; очередь по умолчанию последовательная, чтобы менее сильная модель не угадывала зависимости.
 
-## v0.7+ — Advanced musicianship
-Fingering, pedal/dynamics, sight-reading, expression, advanced repertoire and authoring/teacher tools.
-
-## Current gate
-Do not begin infrastructure implementation until v0.1 design/product decisions and access checks are accepted.
+## Правило продолжения
+Предложение в roadmap не является разрешением на внешние действия. Прочитать `gates.json` перед началом этапа. Ворота без доказательства одобрения остаются `pending`, даже если агент считает результат хорошим.
