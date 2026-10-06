@@ -1,7 +1,7 @@
 # Interaction and copy contract
 
 ## Основные подписи RU / EN
-Главная/Home; Музыка/Music; Учиться/Learn; Библиотека/Library; Продолжить/Continue; Послушать/Listen; Попробовать/Try; Пауза/Pause; Ещё раз/Retry; Повтор фрагмента/Loop; Темп/Tempo; Левая/Left; Обе/Both; Правая/Right; Метronome label в RU только «Метроном»; Помощь/Hints.
+Главная/Home; Музыка/Music; Учиться/Learn; Библиотека/Library; Продолжить/Continue; Послушать/Listen; Попробовать/Try; Пауза/Pause; Ещё раз/Retry; Повтор фрагмента/Loop; Темп/Tempo; Левая/Left; Обе/Both; Правая/Right; Метроном/Metronome; Помощь/Hints.
 
 В интерфейсе не показывать «prerequisite graph», «transport», «adapter», «quantization». Термин аккорда можно объяснить в контексте. В code/i18n keys использовать English stable identifiers, не русские фразы как ключи.
 

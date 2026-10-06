@@ -1,0 +1,9 @@
+# Documentation-tool caches and local files
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Never commit real credentials
+.env
+.env.*
+!.env.example
