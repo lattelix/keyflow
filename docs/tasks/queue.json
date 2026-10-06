@@ -2,7 +2,7 @@
  "schema_version":1,
  "task_files":["docs/tasks/01-design.json","docs/tasks/02-web.json","docs/tasks/03-expansion.json"],
  "states":{
-  "KF-001":{"status":"in_progress","evidence":[],"reviewed_by":null},
+  "KF-001":{"status":"needs_review","evidence":["docs/reports/KF-001-inventory.md"],"reviewed_by":null},
   "KF-002":{"status":"planned","evidence":[],"reviewed_by":null},
   "KF-003":{"status":"planned","evidence":[],"reviewed_by":null},
   "KF-004":{"status":"planned","evidence":[],"reviewed_by":null},
