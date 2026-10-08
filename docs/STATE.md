@@ -36,7 +36,7 @@ Vercel connector отвечает; команда `Alex's projects` на Hobby. 
 Не создавались: Vercel deployment, app scaffold, backend/DB/sync, Expo/EAS project, store accounts или платные ресурсы. Наличие других пользовательских аккаунтов не предполагается.
 
 ## Следующее действие и ограничения
-KF-001 выполнена по содержанию inventory и находится в `needs_review`; до независимого review её нельзя переводить в `done`. Следующая зависимая задача не должна стартовать, пока KF-001 не принята по правилам очереди.
+KF-001 independently re-checked by a separate assistant session on 2026-10-08: pages, counts, styles/variables/libraries, source branch diff and PR CI confirmed. Status `done` on branch `task/KF-001-figma-inventory`; see [KF-001-independent-review.md](reports/KF-001-independent-review.md). This branch is not merged into main. Next eligible task on this reviewed branch is KF-002; downstream work must include verified branch changes.
 
 Все 9 gates остаются `pending`. Код/инфраструктура приложения не начинаются до accepted design handoff и явного `G-IMPLEMENT`. Точные версии toolchain выбираются и проверяются KF-017, не взяты из памяти.
 
