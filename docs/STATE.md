@@ -41,3 +41,6 @@ KF-001 independently re-checked by a separate assistant session on 2026-10-08: p
 Все 9 gates остаются `pending`. Код/инфраструктура приложения не начинаются до accepted design handoff и явного `G-IMPLEMENT`. Точные версии toolchain выбираются и проверяются KF-017, не взяты из памяти.
 
 Фактическая игра, приложение на устройствах, offline на iPhone, musical correctness runtime и обучение новичка ещё не проверены. Planning validation не является доказательством этих возможностей.
+
+## KF-002 (2026-10-08, branch task/KF-002-scope-baseline)
+Проведена ограниченная документальная сверка продуктового baseline. Итоговый report: [KF-002-scope-baseline](reports/KF-002-scope-baseline.md). В task branch KF-002 = `needs_review`; до независимой проверки нельзя переводить в `done` и запускать KF-003. В `main` эти staged branch-изменения отсутствуют; PR №1 содержит reviewed KF-001. Владелец ещё не принимал дизайн и не открывал gates. Локальный clone через shell упирается в DNS; дальнейшие GitHub Actions проверки выполняются в repository и относятся к конкретному SHA.

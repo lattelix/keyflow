@@ -16,8 +16,10 @@
       "reviewed_by": "ChatGPT independent follow-up session (2026-10-08)"
     },
     "KF-002": {
-      "status": "in_progress",
-      "evidence": [],
+      "status": "needs_review",
+      "evidence": [
+        "docs/reports/KF-002-scope-baseline.md"
+      ],
       "reviewed_by": null
     },
     "KF-003": {
