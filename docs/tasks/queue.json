@@ -25,8 +25,12 @@
       "reviewed_by": "ChatGPT independent follow-up session (2026-10-10)"
     },
     "KF-003": {
-      "status": "in_progress",
-      "evidence": [],
+      "status": "needs_review",
+      "evidence": [
+        "docs/reports/KF-003-foundations.md",
+        "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-94",
+        "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-145"
+      ],
       "reviewed_by": null
     },
     "KF-004": {
