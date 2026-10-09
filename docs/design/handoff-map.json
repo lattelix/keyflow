@@ -1,8 +1,80 @@
 {
- "schema_version":1,
- "figma_file":"STjpIkSSiMvFfe9lFog0Yn",
- "status":"awaiting-design-work",
- "verified_cover":{"page":"0:1","frame":"1:10"},
- "product_nodes":[],
- "rules":["Populate only from actual Figma reads after work.","Each mapping includes screen_or_component_id, node_id, approved_variant, revision, intended_code_path and evidence.","Null or missing product mappings mean not ready for design-to-code.","Do not count the cover as an implemented application screen."]
+ "schema_version": 1,
+ "figma_file": "STjpIkSSiMvFfe9lFog0Yn",
+ "status": "inventory-verified-awaiting-design-work",
+ "verified_cover": {
+  "page": "0:1",
+  "frame": "1:10",
+  "texts": [
+   "1:11",
+   "1:12"
+  ]
+ },
+ "verified_pages": [
+  {
+   "name": "00 · Cover",
+   "node_id": "0:1",
+   "child_count": 1
+  },
+  {
+   "name": "01 · Foundations",
+   "node_id": "1:2",
+   "child_count": 0
+  },
+  {
+   "name": "02 · Components",
+   "node_id": "1:3",
+   "child_count": 0
+  },
+  {
+   "name": "03 · Flows",
+   "node_id": "1:4",
+   "child_count": 0
+  },
+  {
+   "name": "04 · Mobile",
+   "node_id": "1:5",
+   "child_count": 0
+  },
+  {
+   "name": "05 · Tablet",
+   "node_id": "1:6",
+   "child_count": 0
+  },
+  {
+   "name": "06 · Desktop",
+   "node_id": "1:7",
+   "child_count": 0
+  },
+  {
+   "name": "07 · Prototype",
+   "node_id": "1:8",
+   "child_count": 0
+  },
+  {
+   "name": "99 · Archive",
+   "node_id": "1:9",
+   "child_count": 0
+  }
+ ],
+ "verified_inventory": {
+  "local_components": [],
+  "local_variable_collections": [],
+  "local_variables": [],
+  "local_styles": {
+   "paint": [],
+   "text": [],
+   "effect": [],
+   "grid": []
+  },
+  "libraries_added_to_file": []
+ },
+ "product_nodes": [],
+ "rules": [
+  "Populate product mappings only from actual Figma reads after work.",
+  "Each mapping includes screen_or_component_id, node_id, approved_variant, revision, intended_code_path and evidence.",
+  "Null or missing product mappings mean not ready for design-to-code.",
+  "Do not count the cover as an implemented application screen.",
+  "Root get_metadata without nodeId was incomplete during KF-001; use verified page IDs and per-page reads for inventory."
+ ]
 }

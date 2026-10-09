@@ -5,27 +5,39 @@
 ## Репозиторий и пакет планирования
 Целевой repository: `lattelix/keyflow`, ветка `main`. Исходный commit перед пакетом спецификации: `61616a211c88d31b6ffa063bb34447a193bfb845`; исходное Git tree: `19e28386676a3fcd6241f641c694b5329897066a`.
 
-Первоначально были только README, AGENTS, product/design/architecture/roadmap. Пакет v1 заменяет наброски связанными контрактами и добавляет50карточек задач,24требования,16экранных и30компонентных спецификаций,9ворот, руководства исполнителю/ревьюеру и read-only validator. Это спецификации, не построенные экраны.
+Первоначально были только README, AGENTS, product/design/architecture/roadmap. Пакет v1 заменяет наброски связанными контрактами и добавляет 50 карточек задач, 24 требования, 16 экранных и 30 компонентных спецификаций, 9 ворот, руководства исполнителю/ревьюеру и read-only validator. Это спецификации, не построенные экраны.
 
-Реальный candidate `8a0d321ce1efc7608446fd4889abd97a2d1e4a14` прошёл Documentation contracts CI: structural validation и29unit tests validator. [Отчёт и evidence](reports/specification-v1-validation.md). Для следующих commits проверять их собственный run. Добавлен **только документационный CI**, не сборка приложения; он не меняет tasks/gates.
+Текущий `main` перед KF-001: `a49f095df420c84bed84eeaa0d101954f4e560d3`. GitHub Actions run `37501700262` (`Documentation contracts`) для этого SHA завершён `success`. Историческая ветка `docs/keyflow-execution-spec-v1` на момент старта идентична `main` (0 commits ahead/behind), открытых PR не было.
 
 ## Figma
 Файл: https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn
 
-Workspace по формулировке пользователя: Latitude X Lab; ранее отображаемое имя connector: `lattelix Lab`. Это не TalentBay.
+Целевой workspace по формулировке владельца: Latitude X Lab; подключённый личный аккаунт Figma содержит план `lattelix Lab` с Full seat. Подключение также имеет доступ к TalentBay, но в KF-001 читался только точный файл Keyflow `STjpIkSSiMvFfe9lFog0Yn`; сторонние файлы/библиотеки не открывались и не изменялись.
 
-Свежий `get_metadata` без nodeId вернул только страницу `0:1 / 00 · Cover`. Чтение этой страницы подтвердило `1:10 / Keyflow · Product Design`,1440×900 и два текстовых слоя `1:11`,`1:12`.
+KF-001 повторно проверил структуру файла. `get_metadata` без nodeId по-прежнему перечисляет только `0:1 / 00 · Cover`, поэтому этот агрегированный read нельзя использовать как полный inventory. Независимый read через Plugin API того же файла вернул все девять страниц, после чего каждая была подтверждена отдельным `get_metadata(nodeId)`:
 
-Ранний отчёт утверждал создание ещё восьми страниц, но свежим чтением они **не подтверждены**. Не считать их существующими, не использовать предполагаемые page IDs. KF-001 заново инвентаризирует файл и безопасно восстанавливает отсутствующую структуру. Подготовка документации не выполняла этот designer task и не изменяла Figma.
+- `0:1 / 00 · Cover` — 1 child; внутри `1:10 / Keyflow · Product Design`, 1440×900, тексты `1:11` и `1:12`.
+- `1:2 / 01 · Foundations` — пустая страница.
+- `1:3 / 02 · Components` — пустая страница.
+- `1:4 / 03 · Flows` — пустая страница.
+- `1:5 / 04 · Mobile` — пустая страница.
+- `1:6 / 05 · Tablet` — пустая страница.
+- `1:7 / 06 · Desktop` — пустая страница.
+- `1:8 / 07 · Prototype` — пустая страница.
+- `1:9 / 99 · Archive` — пустая страница.
 
-Не подтверждены: product tokens/components, экраны, интерактивный прототип, принятие визуального дизайна. Обложка не считается дизайн-системой.
+Read-only inventory через Plugin API подтвердил: local components/component sets — 0; local variable collections — 0; local variables — 0; local paint/text/effect/grid styles — 0. `get_libraries` подтвердил `libraries_added_to_file: []`. В KF-001 ничего в Figma не создавалось и не удалялось: целевая структура уже существовала, поэтому повторное создание страниц было бы ошибкой.
+
+Не подтверждены и не считаются созданными: product tokens/components, экранные макеты, интерактивный прототип, принятие визуального дизайна. Cover не считается дизайн-системой или application screen.
 
 ## Сервисы
 Vercel connector отвечает; команда `Alex's projects` на Hobby. В проверенном списке Git-linked проектов `keyflow` отсутствует. Доступ к команде не доказывает успешный импорт repository. Создание/проверка проекта — KF-036 после соответствующих ворот.
 
-Не создавались этим пакетом: Vercel deployment, app scaffold, backend/DB/sync, Expo/EAS project, store accounts или платные ресурсы. Наличие других пользовательских аккаунтов не предполагается.
+Не создавались: Vercel deployment, app scaffold, backend/DB/sync, Expo/EAS project, store accounts или платные ресурсы. Наличие других пользовательских аккаунтов не предполагается.
 
 ## Следующее действие и ограничения
-`python3 tools/plan.py next` выбирает **KF-001**. Все50product tasks — planned; все9gates — pending. Код/инфраструктура приложения не начинаются до accepted design handoff и явного G-IMPLEMENT. Точные версии toolchain выбираются и проверяются KF-017, не взяты из памяти.
+KF-001 independently re-checked by a separate assistant session on 2026-10-08: pages, counts, styles/variables/libraries, source branch diff and PR CI confirmed. Status `done` on branch `task/KF-001-figma-inventory`; see [KF-001-independent-review.md](reports/KF-001-independent-review.md). This branch is not merged into main. Next eligible task on this reviewed branch is KF-002; downstream work must include verified branch changes.
 
-Фактическая игра, приложение на устройствах, offline на iPhone, musical correctness runtime и обучение новичка ещё не проверены. Planning validation не является доказательством этих возможностей или гарантией безошибочной работы любого агента.
+Все 9 gates остаются `pending`. Код/инфраструктура приложения не начинаются до accepted design handoff и явного `G-IMPLEMENT`. Точные версии toolchain выбираются и проверяются KF-017, не взяты из памяти.
+
+Фактическая игра, приложение на устройствах, offline на iPhone, musical correctness runtime и обучение новичка ещё не проверены. Planning validation не является доказательством этих возможностей.
