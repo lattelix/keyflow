@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "id": "first-motif-bars-1-2-design",
+  "purpose": "design-only verified fixture for KF-005; not a runtime asset and not Another Love",
+  "provenance": {
+    "source_path": "docs/learning/reference-journey.md",
+    "source_blob_sha": "88b796fcf8ee0b1fac0de2ff2a2d61f7a64e8392",
+    "title_ru": "Первый мотив",
+    "title_en": "First Motif",
+    "authorship": "original Keyflow educational material",
+    "reference_scope": "bars 1-2 only"
+  },
+  "score": {
+    "meter": {
+      "beats": 4,
+      "beat_unit": 4
+    },
+    "key": "C major",
+    "original_quarter_bpm": 60,
+    "middle_c": {
+      "pitch": "C4",
+      "midi": 60
+    },
+    "phrase_range": {
+      "start_q": 0,
+      "end_exclusive_q": 8
+    },
+    "pitch_range": {
+      "low": "C3",
+      "high": "G4"
+    },
+    "measure_count": 2
+  },
+  "events": [
+    {
+      "id": "m1-rh-1",
+      "measure": 1,
+      "hand": "right",
+      "pitch": "C4",
+      "midi": 60,
+      "onset_q": 0,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": 1
+    },
+    {
+      "id": "m1-rh-2",
+      "measure": 1,
+      "hand": "right",
+      "pitch": "D4",
+      "midi": 62,
+      "onset_q": 1,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": 2
+    },
+    {
+      "id": "m1-rh-3",
+      "measure": 1,
+      "hand": "right",
+      "pitch": "E4",
+      "midi": 64,
+      "onset_q": 2,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": 3
+    },
+    {
+      "id": "m1-rh-4",
+      "measure": 1,
+      "hand": "right",
+      "pitch": "G4",
+      "midi": 67,
+      "onset_q": 3,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": 5
+    },
+    {
+      "id": "m1-lh-1",
+      "measure": 1,
+      "hand": "left",
+      "pitch": "C3",
+      "midi": 48,
+      "onset_q": 0,
+      "duration_q": 4,
+      "written_duration": "whole",
+      "fingering": null
+    },
+    {
+      "id": "m2-rh-1",
+      "measure": 2,
+      "hand": "right",
+      "pitch": "E4",
+      "midi": 64,
+      "onset_q": 4,
+      "duration_q": 2,
+      "written_duration": "half",
+      "fingering": null
+    },
+    {
+      "id": "m2-rh-2",
+      "measure": 2,
+      "hand": "right",
+      "pitch": "D4",
+      "midi": 62,
+      "onset_q": 6,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": null
+    },
+    {
+      "id": "m2-rh-3",
+      "measure": 2,
+      "hand": "right",
+      "pitch": "C4",
+      "midi": 60,
+      "onset_q": 7,
+      "duration_q": 1,
+      "written_duration": "quarter",
+      "fingering": null
+    },
+    {
+      "id": "m2-lh-1",
+      "measure": 2,
+      "hand": "left",
+      "pitch": "C3",
+      "midi": 48,
+      "onset_q": 4,
+      "duration_q": 4,
+      "written_duration": "whole",
+      "fingering": null
+    }
+  ],
+  "editorial_harmony": [
+    {
+      "measure": 1,
+      "label": "C",
+      "note": "editorial harmony label only; not an asserted simultaneous triad voicing"
+    },
+    {
+      "measure": 2,
+      "label": "C",
+      "note": "editorial harmony label only; not an asserted simultaneous triad voicing"
+    }
+  ],
+  "assertions": {
+    "attack_count": 9,
+    "phrase_duration_q": 8,
+    "seconds_at_speed_1": 8,
+    "seconds_at_speed_0_5": 16,
+    "per_measure_hand_duration_q": {
+      "1": {
+        "right": 4,
+        "left": 4
+      },
+      "2": {
+        "right": 4,
+        "left": 4
+      }
+    },
+    "right_hand_fingering_source": "reference-journey step 5 provides bar 1 RH 1/2/3/5 only; other fingering remains not-provided"
+  },
+  "design_rendering": {
+    "notation": "vector design fixture built from staff lines, vector noteheads/stems and exact event geometry; not a production engraving engine",
+    "exact_pitch_mapping": "treble reference E4 bottom line; C4 middle-C ledger; bass reference C3 second space",
+    "duration_shapes": "quarter=filled notehead+stem; half=hollow notehead+stem; whole=hollow notehead without stem",
+    "accessibility": "every source event keeps pitch+octave, hand, measure and duration in labels/list; NotePad provides >=48px alternative",
+    "limitation": "production C10 must use the approved notation renderer; this fixture verifies design semantics and source-note IDs only"
+  }
+}
