@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "figma_file": "STjpIkSSiMvFfe9lFog0Yn",
- "status": "inventory-verified-awaiting-design-work",
+ "status": "foundations-self-reviewed-awaiting-next-design-work",
  "verified_cover": {
   "page": "0:1",
   "frame": "1:10",
@@ -59,11 +59,62 @@
  ],
  "verified_inventory": {
   "local_components": [],
-  "local_variable_collections": [],
-  "local_variables": [],
+  "local_variable_collections": [
+   {
+    "name": "KF Color Primitives",
+    "node_id": "VariableCollectionId:8:2",
+    "modes": [
+     "Default"
+    ],
+    "variable_count": 34
+   },
+   {
+    "name": "KF Dimensions",
+    "node_id": "VariableCollectionId:8:37",
+    "modes": [
+     "Default"
+    ],
+    "variable_count": 25
+   },
+   {
+    "name": "KF Theme",
+    "node_id": "VariableCollectionId:8:63",
+    "modes": [
+     "Light",
+     "Dark"
+    ],
+    "variable_count": 24
+   }
+  ],
+  "local_variable_count": 83,
   "local_styles": {
    "paint": [],
-   "text": [],
+   "text": [
+    {
+     "name": "KF/Body",
+     "node_id": "S:01181f03437171d910c150806ef26c02e9f98780,"
+    },
+    {
+     "name": "KF/Label",
+     "node_id": "S:116c825029e32c62735e9aa7c59b43c8bdd6e992,"
+    },
+    {
+     "name": "KF/Caption",
+     "node_id": "S:4620a6189775bdccedef099007d6f7ab90775f98,"
+    },
+    {
+     "name": "KF/Heading Small",
+     "node_id": "S:658514f1baee7e5065b009a61fb2a1b76038114f,"
+    },
+    {
+     "name": "KF/Heading",
+     "node_id": "S:a3d019de5380981d1f2a65f7c419dd1b4f67b5b9,"
+    },
+    {
+     "name": "KF/Display",
+     "node_id": "S:9b9cd364b619e052008240d878f65f7a195bf106,"
+    }
+   ],
    "effect": [],
    "grid": []
   },
@@ -76,5 +127,50 @@
   "Null or missing product mappings mean not ready for design-to-code.",
   "Do not count the cover as an implemented application screen.",
   "Root get_metadata without nodeId was incomplete during KF-001; use verified page IDs and per-page reads for inventory."
- ]
+ ],
+ "foundations": {
+  "status": "done-under-owner-self-review-exception",
+  "page_id": "1:2",
+  "specimens": [
+   {
+    "theme": "Light",
+    "node_id": "8:94",
+    "width": 1200,
+    "height": 1699
+   },
+   {
+    "theme": "Dark",
+    "node_id": "8:145",
+    "width": 1200,
+    "height": 1699
+   }
+  ],
+  "collections": [
+   {
+    "name": "KF Color Primitives",
+    "node_id": "VariableCollectionId:8:2"
+   },
+   {
+    "name": "KF Dimensions",
+    "node_id": "VariableCollectionId:8:37"
+   },
+   {
+    "name": "KF Theme",
+    "node_id": "VariableCollectionId:8:63"
+   }
+  ],
+  "text_style_names": [
+   "KF/Body",
+   "KF/Label",
+   "KF/Caption",
+   "KF/Heading Small",
+   "KF/Heading",
+   "KF/Display"
+  ],
+  "token_name_mapping": "Figma variable names use slash separators because dot names are rejected by the Plugin API; replacing '/' with '.' gives the source key in docs/design/tokens.json. Code syntax is assigned explicitly for WEB, ANDROID and iOS.",
+  "evidence": [
+   "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-94",
+   "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-145"
+  ]
+ }
 }
