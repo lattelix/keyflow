@@ -36,13 +36,14 @@
       "reviewed_by": "Owner-authorized executor self-review exception (2026-10-10; not independent)"
     },
     "KF-004": {
-      "status": "needs_review",
+      "status": "done",
       "evidence": [
         "docs/reports/KF-004-primitives.md",
+        "docs/reports/KF-004-owner-authorized-self-review.md",
         "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=18-136",
         "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=18-1182"
       ],
-      "reviewed_by": null
+      "reviewed_by": "Owner-authorized executor self-review exception (2026-10-10; not independent)"
     },
     "KF-005": {
       "status": "planned",
