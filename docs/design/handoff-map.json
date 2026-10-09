@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "figma_file": "STjpIkSSiMvFfe9lFog0Yn",
- "status": "foundations-self-reviewed-awaiting-next-design-work",
+ "status": "primitives-built-needs-review",
  "verified_cover": {
   "page": "0:1",
   "frame": "1:10",
@@ -24,7 +24,7 @@
   {
    "name": "02 · Components",
    "node_id": "1:3",
-   "child_count": 0
+   "child_count": 15
   },
   {
    "name": "03 · Flows",
@@ -58,7 +58,73 @@
   }
  ],
  "verified_inventory": {
-  "local_components": [],
+  "local_components": [
+   {
+    "name": "KF/Icon/Search",
+    "node_id": "11:2",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/Icon/ArrowRight",
+    "node_id": "11:5",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/Icon/Close",
+    "node_id": "11:8",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/Icon/Refresh",
+    "node_id": "11:11",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/Icon/Refresh OnPrimary",
+    "node_id": "11:14",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/Icon/ChevronRight",
+    "node_id": "11:17",
+    "kind": "helper"
+   },
+   {
+    "name": "KF/C01 Button",
+    "node_id": "12:248",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C02 IconButton",
+    "node_id": "12:295",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C03 SearchField",
+    "node_id": "13:82",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C04 SegmentedControl",
+    "node_id": "13:164",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C21 BottomSheet",
+    "node_id": "16:114",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C22 Dialog",
+    "node_id": "16:327",
+    "kind": "component-set"
+   },
+   {
+    "name": "KF/C24 StatePanel",
+    "node_id": "16:446",
+    "kind": "component-set"
+   }
+  ],
   "local_variable_collections": [
    {
     "name": "KF Color Primitives",
@@ -120,7 +186,71 @@
   },
   "libraries_added_to_file": []
  },
- "product_nodes": [],
+ "product_nodes": [
+  {
+   "screen_or_component_id": "C01",
+   "node_id": "12:248",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=12-248",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C02",
+   "node_id": "12:295",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=12-295",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C03",
+   "node_id": "13:82",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=13-82",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C04",
+   "node_id": "13:164",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=13-164",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C21",
+   "node_id": "16:114",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-114",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C22",
+   "node_id": "16:327",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-327",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  },
+  {
+   "screen_or_component_id": "C24",
+   "node_id": "16:446",
+   "approved_variant": null,
+   "revision": "KF-004",
+   "intended_code_path": null,
+   "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-446",
+   "approval_status": "task-verified; complete design handoff and owner approval still pending"
+  }
+ ],
  "rules": [
   "Populate product mappings only from actual Figma reads after work.",
   "Each mapping includes screen_or_component_id, node_id, approved_variant, revision, intended_code_path and evidence.",
@@ -171,6 +301,87 @@
   "evidence": [
    "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-94",
    "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-145"
+  ]
+ },
+ "primitives": {
+  "status": "needs_review",
+  "page_id": "1:3",
+  "component_sets": [
+   {
+    "id": "C01",
+    "node_id": "12:248",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=12-248"
+   },
+   {
+    "id": "C02",
+    "node_id": "12:295",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=12-295"
+   },
+   {
+    "id": "C03",
+    "node_id": "13:82",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=13-82"
+   },
+   {
+    "id": "C04",
+    "node_id": "13:164",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=13-164"
+   },
+   {
+    "id": "C21",
+    "node_id": "16:114",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-114"
+   },
+   {
+    "id": "C22",
+    "node_id": "16:327",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-327"
+   },
+   {
+    "id": "C24",
+    "node_id": "16:446",
+    "evidence": "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=16-446"
+   }
+  ],
+  "helper_icons": [
+   "11:2",
+   "11:5",
+   "11:8",
+   "11:11",
+   "11:14",
+   "11:17"
+  ],
+  "review_frames": [
+   {
+    "theme": "Light",
+    "node_id": "18:136",
+    "width": 1200,
+    "height": 4652
+   },
+   {
+    "theme": "Dark",
+    "node_id": "18:1182",
+    "width": 1200,
+    "height": 4652
+   }
+  ],
+  "qa": {
+   "loading_width": {
+    "default_instance": "18:142",
+    "loading_instance": "18:253",
+    "default_px": 209,
+    "loading_px": 209
+   },
+   "text_200_instances": [
+    "18:1124",
+    "18:1141",
+    "18:1164"
+   ],
+   "detached_component_descendants_in_review": 0
+  },
+  "evidence": [
+   "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=18-136",
+   "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=18-1182"
   ]
  }
 }
