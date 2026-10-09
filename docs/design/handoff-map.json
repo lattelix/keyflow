@@ -1,7 +1,7 @@
 {
  "schema_version": 1,
  "figma_file": "STjpIkSSiMvFfe9lFog0Yn",
- "status": "foundations-built-needs-review",
+ "status": "foundations-self-reviewed-awaiting-next-design-work",
  "verified_cover": {
   "page": "0:1",
   "frame": "1:10",
@@ -129,7 +129,7 @@
   "Root get_metadata without nodeId was incomplete during KF-001; use verified page IDs and per-page reads for inventory."
  ],
  "foundations": {
-  "status": "needs_review",
+  "status": "done-under-owner-self-review-exception",
   "page_id": "1:2",
   "specimens": [
    {
