@@ -16,9 +16,13 @@
       "reviewed_by": "ChatGPT independent follow-up session (2026-10-08)"
     },
     "KF-002": {
-      "status": "planned",
-      "evidence": [],
-      "reviewed_by": null
+      "status": "done",
+      "evidence": [
+        "docs/reports/KF-002-scope-baseline.md",
+        "docs/reports/KF-002-independent-review.md",
+        "https://github.com/lattelix/keyflow/pull/2"
+      ],
+      "reviewed_by": "ChatGPT independent follow-up session (2026-10-10)"
     },
     "KF-003": {
       "status": "planned",
