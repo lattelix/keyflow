@@ -25,13 +25,15 @@
       "reviewed_by": "ChatGPT independent follow-up session (2026-10-10)"
     },
     "KF-003": {
-      "status": "needs_review",
+      "status": "done",
       "evidence": [
         "docs/reports/KF-003-foundations.md",
+        "docs/reports/KF-003-owner-authorized-self-review.md",
+        "https://github.com/lattelix/keyflow/pull/3",
         "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-94",
         "https://www.figma.com/design/STjpIkSSiMvFfe9lFog0Yn?node-id=8-145"
       ],
-      "reviewed_by": null
+      "reviewed_by": "Owner-authorized executor self-review exception (2026-10-10; not independent)"
     },
     "KF-004": {
       "status": "planned",
